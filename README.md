@@ -28,13 +28,13 @@ All methods that perform requests return [Bluebird] promises.
 
   [Bluebird]: https://github.com/petkaantonov/bluebird
 
-### new EmtMad(idClient, passKey)
+### `new EmtMad(idClient, passKey)`
 
 Creates a new object that can perform requests to the EMT OpenData API using the
 given `idClient` and `passKey` as provided by EMT.
 
 
-### EmtMad#request(service, parameters)
+### `EmtMad#request(service, parameters)`
 
 Performs a request to the specified `service` sending the given `parameters`.
 This is the base method upon every other builds. It allows to perform low-level

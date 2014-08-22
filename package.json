@@ -2,6 +2,7 @@
   "name": "emt-mad",
   "version": "0.1.0",
   "description": "API client for EMT Madrid web services",
+  "repository": "https://github.com/Darkhogg/node-emt-mad",
   "main": "lib/emtmad.js",
   "dependencies": {
     "bluebird": "^2.3.0",
