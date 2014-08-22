@@ -1,6 +1,10 @@
 EMT Madrid for Node.js
 ======================
 
+![](http://img.shields.io/npm/v/emt-mad.svg?style=flat)
+&nbsp;
+![](http://img.shields.io/travis/darkhogg/emt-mad.svg?style=flat)
+
 `emt-mad` is an API client for easy access to the [EMT Madrid open data][emtod] services.
 
   [emtod]: http://opendata.emtmadrid.es/
