@@ -1,6 +1,6 @@
 {
   "name": "emt-mad",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "API client for EMT Madrid web services",
   "repository": "https://github.com/Darkhogg/node-emt-mad",
   "main": "lib/emtmad.js",
