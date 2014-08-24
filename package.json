@@ -6,6 +6,7 @@
   "main": "lib/emtmad.js",
   "dependencies": {
     "bluebird": "^2.3.0",
+    "moment": "^2.8.2",
     "request-promise": "^0.1.2",
     "underscore": "^1.6.0"
   },
