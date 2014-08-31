@@ -58,6 +58,30 @@ day. `dateBegin` marks the start of this list and defaults to `new Date()`.
 
 See the [CalendarItem](#calendaritem) type for more information.
 
+
+#### `EmtMad#busGetGroups(cultureInfo)`
+
+Gets a list of "bus groups" with an identifier and a short description.
+The `cultureInfo` parameter is supposed to select the language and defaults to
+`EmtMad.CULTURE_EN`. It currently does not seem to work at all. Possible values
+are:
+
+  - `EmtMad.CULTURE_EN`: `"EN"`, English. Default value.
+  - `EmtMad.CULTURE_ES`: `"ES"`, Spanish.
+
+See the [GroupItem](#groupitem) type for more information.
+
+
+#### `EmtMad#busGetLinesList(lines, date)`
+
+Gets a list with all lines included on the `lines` parameters. If no lines are
+given, this method returns all available lines. The `date` parameter indicates
+the date for which line information is returned, and defaults to the current
+day.
+
+See the [LineItem](#lineitem) type for more information.
+
+
 ### Other Methods
 
 > TODO: Add all other methods
@@ -95,3 +119,24 @@ See the [CalendarItem](#calendaritem) type for more information.
     effort. The existence of these fields is subject to change in the future.
 
   [momentjs]: http://momentjs.com/
+
+
+#### `GroupItem`
+
+  - `id`: An integer representing identifier of the group. The observed values
+    include only multiples of `100`.
+  - `description`: A string with a textual description of the group.
+
+
+#### `LineItem`
+
+  - `id`: An integer representing the identifier of the line.
+  - `label`: The actual line name shown in every informational piece of
+    information of the city. Usually a number, lettler, or a letter and a
+    number.
+  - `group`: An integer representing the group to which the line belongs. This
+    group does not necessary matches a group from the `GetGroups` service.
+  - `nameA`: The name of one of the line ends, named `A`.
+  - `nameB`: The name of the other line end, named `B`.
+  - `dateFirst`: The date at which this information became valid.
+  - `dateLast`: Known date at which this information becomes invalid.
