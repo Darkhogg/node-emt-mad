@@ -138,5 +138,7 @@ See the [LineItem](#lineitem) type for more information.
     group does not necessary matches a group from the `GetGroups` service.
   - `nameA`: The name of one of the line ends, named `A`.
   - `nameB`: The name of the other line end, named `B`.
-  - `dateFirst`: The date at which this information became valid.
-  - `dateLast`: Known date at which this information becomes invalid.
+  - `dateFirst`: The date at which this information became valid as a `Moment`
+    object.
+  - `dateLast`: Known date at which this information becomes invalid as a
+    `Moment` object.
