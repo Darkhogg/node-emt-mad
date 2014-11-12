@@ -89,7 +89,7 @@ See the [LineItem](#lineitem) type for more information.
 
 ### Data Types and Values
 
-#### `CalendarItem`
+#### CalendarItem
 
   - `date`: A [`Moment`][momentjs] object constructed from the response.
   - `dayType`: A string value that determines the type of day from the
@@ -121,14 +121,14 @@ See the [LineItem](#lineitem) type for more information.
   [momentjs]: http://momentjs.com/
 
 
-#### `GroupItem`
+#### GroupItem
 
   - `id`: An integer representing identifier of the group. The observed values
     include only multiples of `100`.
   - `description`: A string with a textual description of the group.
 
 
-#### `LineItem`
+#### LineItem
 
   - `id`: An integer representing the identifier of the line.
   - `label`: The actual line name shown in every informational piece of
@@ -142,3 +142,5 @@ See the [LineItem](#lineitem) type for more information.
     object.
   - `dateLast`: Known date at which this information becomes invalid as a
     `Moment` object.
+
+
